@@ -1,0 +1,68 @@
+<title>Sam Rivera Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Translation, content, English lessons, and a personal corner. Pick what you're here for.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@300;400&family=Source+Sans+3:wght@300;400;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+
+<header class="site-header">
+  <div class="bar">
+    <a class="wordmark" href="#home">sam rivera<span>.</span></a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <svg width="20" height="14" viewBox="0 0 20 14" aria-hidden="true"><path d="M0 1h20M0 7h20M0 13h20" stroke="currentColor" stroke-width="1.5"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul id="nav-list"></ul>
+      <button class="persona-chip" type="button" data-open-gate title="Change what you're here for">
+        <span class="dot"></span><span>Viewing as: <b id="chip-label">…</b></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="foot">
+      <ul id="foot-nav"></ul>
+      <div class="mid">
+        <a class="wordmark" href="#home">sam rivera<span>.</span></a>
+        <p id="foot-tagline"></p>
+        <p id="foot-city"></p>
+      </div>
+      <div class="right">
+        <p class="eyebrow" style="color:var(--sand)">Connect</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+          <a href="#contact" aria-label="Contact form">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg></a>
+        </div>
+        <a class="btn" href="#contact">Start collaborating</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span id="foot-year"></span>
+      <span>Placeholder content · <button type="button" data-open-gate>Change view</button></span>
+    </div>
+  </div>
+</footer>
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title" hidden>
+  <button class="gate-close" id="gate-close" type="button" aria-label="Close" hidden>×</button>
+  <div class="gate-panel">
+    <span class="wordmark">sam rivera<span>.</span></span>
+    <p class="eyebrow">Welcome in</p>
+    <h1 id="gate-title">What are you <em>here for?</em></h1>
+    <p class="muted">Pick one and the site will show you the version that fits.</p>
+    <div class="options" id="options"></div>
+    <p class="eyebrow gate-note">Press 1–4 · switch anytime from the top bar</p>
+  </div>
+</div>
+
+<script src="assets/content.js"></script>
+<script src="assets/app.js"></script>
